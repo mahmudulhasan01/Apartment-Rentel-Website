@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import firebaseinitalizeAuthentication from "../Firebase/Firebase.init";
+import initializefirebase from "../FIrebase/Firebase.init";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -11,7 +11,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import axios from "axios";
-firebaseinitalizeAuthentication();
+initializefirebase();
 const useFirebase = () => {
   const [admin, setAdmin] = useState(false);
   const [user, setUser] = useState({});
