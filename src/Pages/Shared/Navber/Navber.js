@@ -12,7 +12,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "../../../Img/logoforq.png";
-const pages = ["Products", "Pricing", "Blog"];
+import { Link } from "react-router-dom";
+const pages = ["Home", "Shop", "About"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navber = () => {
@@ -76,13 +77,26 @@ const Navber = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                <Link to="/home">
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">Home</Typography>
                   </MenuItem>
-                ))}
+                </Link>
+
+                <Link to="/shop">
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">Shop</Typography>
+                  </MenuItem>
+                </Link>
+
+                <Link to="/about">
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">About</Typography>
+                  </MenuItem>
+                </Link>
               </Menu>
             </Box>
+
             <Typography
               variant="h6"
               noWrap
@@ -91,16 +105,32 @@ const Navber = () => {
             >
               <img src={logo} alt="" srcset="" />
             </Typography>
+
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
+              <Link style={{ textDecoration: "none" }} to="/home">
                 <Button
-                  key={page}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  {page}
+                  Home
                 </Button>
-              ))}
+              </Link>
+              <Link style={{ textDecoration: "none" }} to="/shop">
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  Shop
+                </Button>
+              </Link>
+              <Link style={{ textDecoration: "none" }} to="/about">
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  About
+                </Button>
+              </Link>
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>

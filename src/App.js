@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home/Home";
+import Shop from "./Pages/Shop/Shop";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/shop">
+            <Shop />
           </Route>
 
           <Route path="*">{/* <NotFound /> */}</Route>
