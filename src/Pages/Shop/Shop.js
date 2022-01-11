@@ -17,7 +17,7 @@ const Shop = () => {
   // console.log(apartments);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/apartments`)
+    fetch(`https://morning-coast-63369.herokuapp.com/apartments`)
       .then((res) => res.json())
       .then((data) => setApartments(data));
   }, []);
@@ -52,7 +52,8 @@ const Shop = () => {
                     <CardMedia
                       component="img"
                       height="300"
-                      image="https://i.ibb.co/gZgYgTg/house111111.jpg"
+                      image={apartment.img}
+                      // image="https://i.ibb.co/gZgYgTg/house111111.jpg"
                     />
                     <CardContent>
                       <Link to="" style={{ textDecoration: "none" }}></Link>
