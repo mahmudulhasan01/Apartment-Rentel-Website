@@ -9,7 +9,7 @@ import logo from "../../../Img/logoforq.png";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <Box style={{ padding: 20, backgroundColor: "black", color: "white" }}>
         <Grid
           container
@@ -23,6 +23,7 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} md={12}>
             <Link
+              to=""
               sx={{ color: "balck" }}
               style={{
                 textDecoration: "none",
@@ -35,6 +36,7 @@ const Footer = () => {
               About Us
             </Link>
             <Link
+              to=""
               style={{
                 textDecoration: "none",
                 color: "white",
@@ -46,6 +48,7 @@ const Footer = () => {
               Contact Us{" "}
             </Link>
             <Link
+              to=""
               style={{
                 textDecoration: "none",
                 color: "white",
@@ -57,6 +60,7 @@ const Footer = () => {
               Privacy Policies
             </Link>
             <Link
+              to=""
               style={{
                 textDecoration: "none",
                 color: "white",
@@ -83,7 +87,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </>
   );
 };
 

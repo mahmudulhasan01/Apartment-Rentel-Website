@@ -35,7 +35,7 @@ const Navber = () => {
     setAnchorElUser(null);
   };
   return (
-    <div>
+    <>
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -45,7 +45,7 @@ const Navber = () => {
               component="div"
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
-              <img src={logo} alt="" srcset="" />
+              <img src={logo} alt="" srcSet="" />
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -103,7 +103,7 @@ const Navber = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             >
-              <img src={logo} alt="" srcset="" />
+              <img src={logo} alt="" srcSet="" />
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -138,7 +138,7 @@ const Navber = () => {
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
 
-                  <i class="fas fa-user"></i>
+                  <i className="fas fa-user"></i>
                 </IconButton>
               </Tooltip>
               <Menu
@@ -167,7 +167,7 @@ const Navber = () => {
           </Toolbar>
         </Container>
       </AppBar>
-    </div>
+    </>
   );
 };
 

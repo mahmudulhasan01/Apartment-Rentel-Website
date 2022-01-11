@@ -12,7 +12,7 @@ import { Grid } from "@mui/material";
 
 const Properties = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <Box style={{ textAlign: "center" }}>
       <h2>Featured Listings</h2>
       {/* <Container style={{ textAlign: "center" }}> */}
       <Box sx={{ width: "100%" }}>
@@ -23,7 +23,7 @@ const Properties = () => {
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           <Grid item xs={12} sm={6} md={4}>
-            <div style={{ textAlign: "left" }}>
+            <Box style={{ textAlign: "left" }}>
               <Card
                 sx={{
                   // maxWidth: 440,
@@ -41,10 +41,10 @@ const Properties = () => {
                   image="https://i.ibb.co/gZgYgTg/house111111.jpg"
                 />
                 <CardContent>
-                  <Link style={{ textDecoration: "none" }}></Link>
+                  <Link to="" style={{ textDecoration: "none" }}></Link>
 
                   <Typography variant="body2" color="text.secondary">
-                    <div
+                    <Box
                       style={{
                         fontSize: "18px",
                         fontWeight: 600,
@@ -55,16 +55,16 @@ const Properties = () => {
                       <span>
                         $34,900<label>/Month</label>
                       </span>
-                    </div>
-                    <Link style={{ textDecoration: "none" }}>
+                    </Box>
+                    <Link to="" style={{ textDecoration: "none" }}>
                       <h2>New Apartment Nice View</h2>
                     </Link>
                     <br />
-                    <p>
+                    <Typography variant="body2" gutterBottom>
                       Beautiful Huge 1 Family House In Heart Of <br />
                       Westbury. Newly Renovated With New Wood
-                    </p>
-                    <div
+                    </Typography>
+                    <Box
                       style={{
                         borderTop: "1px solid #E6E6E6",
                         marginBottom: "1px",
@@ -86,7 +86,7 @@ const Properties = () => {
                             marginRight: 10,
                           }}
                         >
-                          3 <i class="fas fa-bed"></i> <br />
+                          3 <i className="fas fa-bed"></i> <br />
                           Bed
                         </li>
                         <li
@@ -99,7 +99,7 @@ const Properties = () => {
                             marginRight: 10,
                           }}
                         >
-                          2 <i class="fas fa-sink"></i>
+                          2 <i className="fas fa-sink"></i>
                           <br />
                           Bath
                         </li>
@@ -113,23 +113,23 @@ const Properties = () => {
                             // marginRight: ,
                           }}
                         >
-                          1231 <i class="fas fa-vector-square"></i> <br />
+                          1231 <i className="fas fa-vector-square"></i> <br />
                           Squre
                         </li>
                       </ul>
-                    </div>
+                    </Box>
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Link style={{ textDecoration: "none" }}>
+                  <Link to="" style={{ textDecoration: "none" }}>
                     <Button size="small">Find A Home</Button>
                   </Link>
                 </CardActions>
               </Card>
-            </div>
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <div style={{ textAlign: "left" }}>
+            <Box style={{ textAlign: "left" }}>
               <Card
                 sx={{
                   // maxWidth: 440,
@@ -147,10 +147,10 @@ const Properties = () => {
                   image="https://i.ibb.co/gZgYgTg/house111111.jpg"
                 />
                 <CardContent>
-                  <Link style={{ textDecoration: "none" }}></Link>
+                  <Link to="" style={{ textDecoration: "none" }}></Link>
 
                   <Typography variant="body2" color="text.secondary">
-                    <div
+                    <Box
                       style={{
                         fontSize: "18px",
                         fontWeight: 600,
@@ -161,16 +161,16 @@ const Properties = () => {
                       <span>
                         $34,900<label>/Month</label>
                       </span>
-                    </div>
-                    <Link style={{ textDecoration: "none" }}>
+                    </Box>
+                    <Link to="" style={{ textDecoration: "none" }}>
                       <h2>New Apartment Nice View</h2>
                     </Link>
                     <br />
-                    <p>
+                    <Typography variant="body2" gutterBottom>
                       Beautiful Huge 1 Family House In Heart Of <br />
                       Westbury. Newly Renovated With New Wood
-                    </p>
-                    <div
+                    </Typography>
+                    <Box
                       style={{
                         borderTop: "1px solid #E6E6E6",
                         marginBottom: "1px",
@@ -192,7 +192,7 @@ const Properties = () => {
                             marginRight: 10,
                           }}
                         >
-                          3 <i class="fas fa-bed"></i> <br />
+                          3 <i className="fas fa-bed"></i> <br />
                           Bed
                         </li>
                         <li
@@ -205,7 +205,7 @@ const Properties = () => {
                             marginRight: 10,
                           }}
                         >
-                          2 <i class="fas fa-sink"></i>
+                          2 <i className="fas fa-sink"></i>
                           <br />
                           Bath
                         </li>
@@ -219,23 +219,23 @@ const Properties = () => {
                             // marginRight: ,
                           }}
                         >
-                          1231 <i class="fas fa-vector-square"></i> <br />
+                          1231 <i className="fas fa-vector-square"></i> <br />
                           Squre
                         </li>
                       </ul>
-                    </div>
+                    </Box>
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Link style={{ textDecoration: "none" }}>
+                  <Link to="" style={{ textDecoration: "none" }}>
                     <Button size="small">Find A Home</Button>
                   </Link>
                 </CardActions>
               </Card>
-            </div>
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <div style={{ textAlign: "left" }}>
+            <Box style={{ textAlign: "left" }}>
               <Card
                 sx={{
                   // maxWidth: 440,
@@ -253,10 +253,10 @@ const Properties = () => {
                   image="https://i.ibb.co/gZgYgTg/house111111.jpg"
                 />
                 <CardContent>
-                  <Link style={{ textDecoration: "none" }}></Link>
+                  <Link to="" style={{ textDecoration: "none" }}></Link>
 
                   <Typography variant="body2" color="text.secondary">
-                    <div
+                    <Box
                       style={{
                         fontSize: "18px",
                         fontWeight: 600,
@@ -267,16 +267,16 @@ const Properties = () => {
                       <span>
                         $34,900<label>/Month</label>
                       </span>
-                    </div>
-                    <Link style={{ textDecoration: "none" }}>
+                    </Box>
+                    <Link to="" style={{ textDecoration: "none" }}>
                       <h2>New Apartment Nice View</h2>
                     </Link>
                     <br />
-                    <p>
+                    <Typography variant="body2" gutterBottom>
                       Beautiful Huge 1 Family House In Heart Of <br />
                       Westbury. Newly Renovated With New Wood
-                    </p>
-                    <div
+                    </Typography>
+                    <Box
                       style={{
                         borderTop: "1px solid #E6E6E6",
                         marginBottom: "1px",
@@ -298,7 +298,7 @@ const Properties = () => {
                             marginRight: 10,
                           }}
                         >
-                          3 <i class="fas fa-bed"></i> <br />
+                          3 <i className="fas fa-bed"></i> <br />
                           Bed
                         </li>
                         <li
@@ -311,7 +311,7 @@ const Properties = () => {
                             marginRight: 10,
                           }}
                         >
-                          2 <i class="fas fa-sink"></i>
+                          2 <i className="fas fa-sink"></i>
                           <br />
                           Bath
                         </li>
@@ -325,25 +325,25 @@ const Properties = () => {
                             // marginRight: ,
                           }}
                         >
-                          1231 <i class="fas fa-vector-square"></i> <br />
+                          1231 <i className="fas fa-vector-square"></i> <br />
                           Squre
                         </li>
                       </ul>
-                    </div>
+                    </Box>
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Link style={{ textDecoration: "none" }}>
+                  <Link to="" style={{ textDecoration: "none" }}>
                     <Button size="small">Find A Home</Button>
                   </Link>
                 </CardActions>
               </Card>
-            </div>
+            </Box>
           </Grid>
         </Grid>
       </Box>
       {/* </Container> */}
-    </div>
+    </Box>
   );
 };
 

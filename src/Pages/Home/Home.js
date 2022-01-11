@@ -6,12 +6,12 @@ import Properties from "./Pereoperties/Properties";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navber></Navber>
       <OureServices></OureServices>
       <Properties></Properties>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 
